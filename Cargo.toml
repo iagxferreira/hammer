@@ -1,0 +1,18 @@
+[package]
+name = "hammer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+aws-config = "1"
+aws-sdk-s3 = "1"
+chrono = { version = "0.4", features = ["clock"] }
+clap = { version = "4", features = ["derive"] }
+futures = "0.3"
+mongodb = { version = "3", features = ["rustls-tls"] }
+serde_json = "1"
+tempfile = "3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "fs"] }
+walkdir = "2"
+zip = { version = "2", default-features = true, features = ["deflate"] }
